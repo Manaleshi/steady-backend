@@ -27,7 +27,9 @@ Section: {section}
 Topic: {topic}
 {weak_hint}
 Respond ONLY with valid JSON, no markdown:
-{{"question":"...","options":["A) ...","B) ...","C) ...","D) ..."],"correct_index":0,"explanation":"Under 80 words, warm and encouraging."}}
+{{"question":"...","options":["A) ...","B) ...","C) ...","D) ..."],"correct_index":2,"explanation":"Under 80 words, warm and encouraging."}}
+
+IMPORTANT: Randomize which option is correct every time. Sometimes the answer is A (index 0), sometimes B (index 1), sometimes C (index 2), sometimes D (index 3). Never default to the same position. Vary it unpredictably.
 Rules: MCAT-level difficulty, plausible distractors, correct_index is 0-based."""
 
     response = requests.post(
